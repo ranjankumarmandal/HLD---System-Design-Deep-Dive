@@ -25,12 +25,23 @@ Assumption
 
 API Design
 -----------
+GET /feed?userId=xyz
+POST /post
+POST /engagement
+GET /feed/refresh?userId=xyz
+GET /notifications?userId=xyz
 
 Data Model / DB Schema
 -----------------------
+- User Data: RDBMS: (user_id, name, email, pic, summary, headline)
+- Feed Data: NoSQL: (user_id, post_id, created_at, rank_score)
+- Post/Engagement Data: NoSQL: (post_id, author_id, created_at, type, metadata)
+- Caching: Radis:
 
 HLD
 ----
+
+notificationservice -> client -> api gateway -> All Service -> Cache + DB stores + media stores
 
 Edge Case Scenario Discussion
 ------------------------------
