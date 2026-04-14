@@ -1,0 +1,22 @@
+Functional Requirement
+----------------------
+
+
+Non-Functional Requirement
+--------------------------
+
+
+Assumption
+----------
+
+API Design
+-----------
+
+Data Model / DB Schema
+-----------------------
+
+HLD
+----
+
+Edge Case Scenario Discussion
+-----------------------------
