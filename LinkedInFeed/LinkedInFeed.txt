@@ -1,13 +1,27 @@
 Functional Requirement
 ----------------------
-
+- User's feed:
+- Create a new post
+- Like a post
+- Comment on a post
+- Get specific post details
+- Share a post
+- Get notifications
 
 Non-Functional Requirement
 --------------------------
-
+- Low latency
+- High availability
+- Massive scale
+- ( and so on )
 
 Assumption
 ----------
+- 500M user globally
+- 100M daily active users
+- 1B views per day
+- 100M posts per day
+- Peak load: 50K req / sec on feed reads; 5k req / sec on feed write
 
 API Design
 -----------
@@ -19,4 +33,4 @@ HLD
 ----
 
 Edge Case Scenario Discussion
------------------------------
+------------------------------
