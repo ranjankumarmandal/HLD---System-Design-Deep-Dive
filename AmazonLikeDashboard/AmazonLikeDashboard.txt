@@ -1,13 +1,20 @@
 Functional Requirement:
 -----------------------
+- Fetch the dashboard data for the current user/session
+- Add a new widget to the user's dashboard
+- Remove a widget from the dashboard
+- Fetch alert notifications
+- Save updated dashboard layout
+- Fetch metric data (orders, revenue, inventory, etc.)
+- View access / change logs for auditing
 
 
 Non-functional Requirement:
 ---------------------------
 
 
-Assumption:
------------
+Assumptions:
+------------
 
 
 API Design:
