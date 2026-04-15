@@ -39,6 +39,10 @@ GET /auditing
 
 Data Model / DB Schema:
 -----------------------
+- Primary data store: NoSQL (CassandraDB, or others): (userId, layout, widgets, listUpdated)
+- Metric data store: Time-series (influxDB, etc.): (eventId, metricType, value, timestamp)
+- RDBMS (optional): (userId, role, status)
+- Cache (Radis, etc.)
 
 
 HLD:
