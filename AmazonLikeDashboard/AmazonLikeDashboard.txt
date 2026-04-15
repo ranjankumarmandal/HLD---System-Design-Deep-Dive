@@ -12,3 +12,7 @@ Assumption:
 
 API Design:
 -----------
+
+
+Data Model / DB Schema:
+-----------------------
