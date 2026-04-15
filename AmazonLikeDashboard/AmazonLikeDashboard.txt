@@ -28,6 +28,13 @@ Assumptions:
 
 API Design:
 -----------
+GET /dashboard
+POST /dashboard/widget
+DELETE /dashboard/widget/{widgetId}
+GET /dashboard/alerts
+POST /dashboard/layout
+GET /metric/{type}
+GET /auditing
 
 
 Data Model / DB Schema:
