@@ -47,6 +47,7 @@ Data Model / DB Schema:
 
 HLD:
 -----
+Client -> API Gateway -> Microservices -> DB + Cache
 
 
 Edge Scenario:
