@@ -19,6 +19,11 @@ Non-functional Requirement:
 
 Assumptions:
 ------------
+- 23 M users, 500k concurrent sessions at peak
+- 50k req per sec for dashboard refresh
+- write req: 20 req / sec
+- Spike reads: 200k req / sec
+- Use auto-scaling horizontally
 
 
 API Design:
