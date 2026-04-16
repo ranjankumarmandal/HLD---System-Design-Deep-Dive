@@ -9,7 +9,7 @@ Functional Requirement:
 - Check the status of order
 
 
-Functional Requirement:
+Non-Functional Requirement:
 -----------------------
 - Low latency
 - High availability
@@ -20,7 +20,13 @@ Functional Requirement:
 
 Assumptions:
 -------------
+- 10k orders / sec: on regular days
+- 100k orders / sec: on peak or prime days
+- 10x reads per write (browsing order history, tracking)
 
+- EKS
+- Message queues (for heavy writes)
+- Caching for hot data (tracking, order summaries)
 
 
 API Design:
