@@ -52,6 +52,7 @@ DB Schema:
 HLD:
 ----
 
+Client -> API GAteway -> Order Service -> Cache + DB + other downstream services (inventory service, payment service, ... etc.)
 
 
 Edge Case Scenarios:
