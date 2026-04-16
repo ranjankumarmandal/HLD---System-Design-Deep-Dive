@@ -31,6 +31,13 @@ Assumptions:
 
 API Design:
 ------------
+POST /orders
+GET /orders/{orderId}
+PUT /orders/{orderId}
+DELETE /orders/{orderId}
+GET /orders?userId={userId}
+POST /orders/{orderId}/return
+GET /orders/{orderId}/tracking
 
 
 DB Schema:
