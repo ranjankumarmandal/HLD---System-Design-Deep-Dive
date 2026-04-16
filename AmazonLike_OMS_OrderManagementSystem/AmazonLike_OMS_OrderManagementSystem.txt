@@ -42,6 +42,11 @@ GET /orders/{orderId}/tracking
 
 DB Schema:
 -----------
+- Order Metadata: RDBMS
+-- Orders: RDBMS: (order_id, user_id, status, created_at, shippping_address, payment_status, items, total_price)
+-- Order Items: (order_id, item_id, quantity, unit_price)
+-- Order Events: (event_id, order_id, event_type, timestamp, metadata)
+- Cache: Radis (for hot orders)
 
 
 HLD:
