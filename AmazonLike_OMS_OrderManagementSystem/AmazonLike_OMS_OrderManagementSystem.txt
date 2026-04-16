@@ -4,6 +4,13 @@ Functional Requirement:
 
 Non-Functional Requirement:
 ---------------------------
+- Place a new order
+- Retrieve details about an order
+- Update existing order
+- Cancel an order
+- List all orders to an user.
+- Initiate a return (optional)
+- Check the status of order
 
 
 Assumptions:
