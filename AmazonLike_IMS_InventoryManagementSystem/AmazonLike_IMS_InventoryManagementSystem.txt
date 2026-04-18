@@ -62,7 +62,7 @@ DB Schema:
 
 HLD:
 ----
-
+client -> api gateway -> (warehouse service + reservation service + product service + inventory service) -> DB cluster + Cache cluster + elastic search + kafka (audit_logging_service + others)
 
 Edge Case Scenarios:
 ---------------------
