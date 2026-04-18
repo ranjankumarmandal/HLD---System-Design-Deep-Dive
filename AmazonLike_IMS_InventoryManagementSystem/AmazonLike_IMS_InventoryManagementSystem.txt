@@ -35,6 +35,16 @@ Assumptions:
 
 API Design:
 -----------
+POST /products
+GET /products/{productId}
+PUT /products/{productId}
+DELETE /products/{productId}
+GET /inventor/{warehouseId}/products
+POST /inventory/reserve
+POST /inventory/release
+POST /inventory/restock
+GET /inventory/availability
+GET /audit/logs
 
 
 DB Schema:
