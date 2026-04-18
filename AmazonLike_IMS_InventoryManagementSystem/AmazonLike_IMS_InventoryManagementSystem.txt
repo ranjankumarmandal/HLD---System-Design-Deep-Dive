@@ -13,3 +13,7 @@ Assumptions:
 API Design:
 -----------
 
+
+DB Schema:
+----------
+
