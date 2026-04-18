@@ -49,7 +49,16 @@ GET /audit/logs
 
 DB Schema:
 ----------
+- RDBMS (products, inventory, warehouse):
+-- products: (id, name, desc, sku, category, attribute, created_at, updated_at)
+-- inventory: (id, product_id< warehouse_id, quantity, reserved, updated_at)
+-- warehouse: (id, name, address, region, created_at)
+- inveontory_audit_log
+- reservations
 
+- NoSQL
+- Elastic Search
+- Cache
 
 HLD:
 ----
