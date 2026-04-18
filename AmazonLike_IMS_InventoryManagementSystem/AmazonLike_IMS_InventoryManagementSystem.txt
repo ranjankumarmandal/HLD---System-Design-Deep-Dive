@@ -1,5 +1,15 @@
 Functional Requirement:
 -----------------------
+- Add product
+- Get product details and inventory status
+- Update product information
+- Remove the product
+- Get inventory for all products in a warehouse
+- Rserve inventory for an order
+- Release reservation (on order cancellation..)
+- Add stock after shipment or return
+- Get stock levels across all locations for a product
+- Get audit trail fof inventory changes
 
 
 Non-Functional Requirement:
