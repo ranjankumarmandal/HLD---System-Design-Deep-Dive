@@ -22,7 +22,16 @@ Non-Functional Requirement:
 
 Assumptions:
 ------------
+- Traffic Estimation:
+-- 10M products and 1000 warehouses with 10k concurrent users and each triggers 10 requests per minute during peak
+--- Peak QPS = 10k user * 10 req / min = 1666 QPS
+--- Reads > writes: easily surpassing 10k QPS
+--- Bulk updates spikes separately: batch processing
 
+- Load Handling:
+-- Load balancers, horizontal scaling for API servers
+-- Separate read replicas
+-- Queue writes for handling batch updates or audits
 
 API Design:
 -----------
