@@ -42,7 +42,7 @@ DB Schema:
 
 HLD:
 ----
-- Client, api gateway, search service,
+- Client, api gateway, search service, autocomplete service
 
 Edge Scenarios:
 ---------------
