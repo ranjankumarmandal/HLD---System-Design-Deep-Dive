@@ -42,7 +42,7 @@ DB Schema:
 
 HLD:
 ----
-
+- Client
 
 Edge Scenarios:
 ---------------
