@@ -1,5 +1,10 @@
 Functional Requirements:
 ------------------------
+- Main endpoint to accept search queries with optional filters... etc.
+- Return search suggestions as user types
+- Accepts catalog changes
+- For monitoring service health
+- ....
 
 
 Non-Functional Requirements:
