@@ -39,3 +39,12 @@ DB Schema:
 - RDBMS/NoSQL: Operational Metadata: (user_id, search_history.preferences)
 - Cache (Radis, ... etc)
 
+
+HLD:
+----
+- Client, api gateway, search service, autocomplete service...
+
+client -> api gateway -> search service + auto-complete service + indexer service -> Search DB + Cache
+
+Edge Scenarios:
+---------------
