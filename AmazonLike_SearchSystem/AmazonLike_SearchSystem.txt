@@ -34,6 +34,10 @@ GET /health
 
 DB Schema:
 -----------
+- NoSQL: Document-oriented search DB: ElasticSearch, OpenSearch, Slr, ...etc
+-- Search DB: (product_id, title, description, price, category, brand, attributes, images, inventory, rating, updated_at)
+- RDBMS/NoSQL: Operational Metadata: (user_id, search_history.preferences)
+- Cache (Radis, ... etc)
 
 
 HLD:
