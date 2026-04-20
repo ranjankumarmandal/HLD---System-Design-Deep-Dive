@@ -17,6 +17,11 @@ Non-Functional Requirements:
 
 Assumptions:
 ------------
+- Traffic load: peak 10M QPS (query per second) during major sales, normally around 2M QPS.
+- Index updates: 100k products / sec during peak inventory changes
+- Reads are much higher than writes
+- Concurrency: Scaling horizontally. Each search nodes can handle 10k QPS, so during peak hours we are going to need thousands of nodes
+- Handling spikes: Deploy autoscaling and rate limiting for protection against DDoS and traffic surges
 
 
 API Design:
