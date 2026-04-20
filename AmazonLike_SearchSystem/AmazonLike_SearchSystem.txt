@@ -26,6 +26,10 @@ Assumptions:
 
 API Design:
 -----------
+POST /search
+POST /autocomplete
+POST /index
+GET /health
 
 
 DB Schema:
