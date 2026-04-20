@@ -9,6 +9,10 @@ Functional Requirements:
 
 Non-Functional Requirements:
 ----------------------------
+- Low latency
+- High Availability
+- Massive scale
+- (and so on...)
 
 
 Assumptions:
