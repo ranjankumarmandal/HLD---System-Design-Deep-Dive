@@ -36,6 +36,9 @@ GET /products/{id}
 
 DB Schema:
 ----------
+- Search Index: ElasticSearch or OpenSearch
+- Product Catalog: Relational DB (PostgreSQL - Products{id (PK), title, desctiption, ..}, Categories(id (PK), name prent_id})
+- User Data: No need until personalization is required
 
 
 
