@@ -44,7 +44,7 @@ DB Schema:
 
 HLD:
 ----
-
+Client -> API Gateway -> Search Service + Product Service -> DB + Cache + Indexer + Search Index
 
 
 Edge Scenarios:
