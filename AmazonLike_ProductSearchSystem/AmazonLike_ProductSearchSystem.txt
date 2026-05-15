@@ -25,6 +25,13 @@ Assumptions:
 
 API Design:
 -----------
+POST /search
+GET /autocomplete
+POST /products
+PUT /products/{id}
+DELETE /products/{id}
+GET /products/{id}
+...
 
 
 DB Schema:
