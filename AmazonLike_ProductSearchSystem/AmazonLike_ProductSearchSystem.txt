@@ -49,3 +49,4 @@ Client -> API Gateway -> Search Service + Product Service -> DB + Cache + Indexe
 
 Edge Scenarios:
 ---------------
+Edge Scenarios
