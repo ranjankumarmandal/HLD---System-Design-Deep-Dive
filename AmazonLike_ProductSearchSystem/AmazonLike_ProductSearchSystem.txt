@@ -17,6 +17,10 @@ Non-Functional Requirement:
 
 Assumptions:
 ------------
+- 10M users, 1M daily searches, peak 2k searches / sec.
+-- Traffic: At peak - internal traffic is higher
+-- Heavy Load: Black friday or sales could spike traffic by 10x. Auto-scale search nodes, use caching for trending queries, and maintain a hot index for bestsellers.
+-- Slow Times: Scale down workers, cache TTL can be longer
 
 
 API Design:
