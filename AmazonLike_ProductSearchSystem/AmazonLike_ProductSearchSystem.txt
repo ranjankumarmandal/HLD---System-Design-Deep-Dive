@@ -1,6 +1,12 @@
 Functional Requirement:
 ------------------------
-
+- Accepts user query (keywords, filters, sort options), returns paginated product results.
+- Returns search suggestions as the user types
+- Adds a new product to the catalog
+- Updates product info (admin / internal)
+- Remove a product (admin / internal)
+- Fetches details for a product (used for product pages)
+- (Optional) recommendations
 
 Non-Functional Requirement:
 ---------------------------
