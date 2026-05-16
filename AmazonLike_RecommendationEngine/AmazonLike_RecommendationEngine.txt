@@ -12,3 +12,9 @@ API Design:
 
 DB Schema:
 ----------
+
+HLD:
+----
+
+Edge Scenarios:
+----------------
