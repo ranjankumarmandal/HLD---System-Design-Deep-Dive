@@ -1,5 +1,10 @@
 Functional Requirement:
 -----------------------
+- Returns a list of recommended product IDs for a given user
+- Receives activity events like clicks, purchases, views, and updates user profiles
+- Returns a list of similar products for a given product
+- Add / update a product in the catalog
+- (Optional): Returns trending products
 
 Non-functional Requirement:
 ----------------------------
