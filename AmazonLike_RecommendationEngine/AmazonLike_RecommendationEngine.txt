@@ -24,6 +24,11 @@ Assumptions:
 
 API Design:
 -----------
+GET /recommendations?userId=xxx
+POST /userActivity
+GET /products/{productId}/similar
+POST /product
+GET /recommendations/trending
 
 DB Schema:
 ----------
