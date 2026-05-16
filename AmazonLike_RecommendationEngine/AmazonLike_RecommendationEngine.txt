@@ -40,6 +40,7 @@ DB Schema:
 
 HLD:
 ----
+client -> api gateway -> Recommendation Service + Product Service + User Activity Service + ML Pipeline -> Cache Service + UserProfile Store + ProductCatalog + ModelStore + UserActivityStore + monitoring
 
 Edge Scenarios:
 ----------------
