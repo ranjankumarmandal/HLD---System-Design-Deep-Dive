@@ -15,6 +15,12 @@ Non-functional Requirement:
 
 Assumptions:
 ------------
+- Assume: 100M users, 10M products
+- Peak load: 10k req / sec for recommendations during events / holidays
+- User activity events: upto 100k / sec at peak
+- Storage: Billions of activity events, millions of profile updates daily
+- To handle spikes, we are going to use autoscaling and batch processing for heavy computations
+- Caching layers to absorb read spikes for popular products / users
 
 API Design:
 -----------
