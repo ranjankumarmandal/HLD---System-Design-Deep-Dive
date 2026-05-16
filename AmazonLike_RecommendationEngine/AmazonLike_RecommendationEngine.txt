@@ -32,6 +32,11 @@ GET /recommendations/trending
 
 DB Schema:
 ----------
+- User Activity Store: NoSQL: Cassandra: (UserActivity: userId, eventType, productId, timestamp, metadata)
+- User Profile Store: NoSQL: DynamoDB: (UserProfile: userId, recentViews, purchaseHistory, preferences: lastUpdate)
+- Product Catalog: RDBMS or NoSQL postgreSQL, DynamoDB : (Product: productId, title, description, category, price, tags, imageUrl, availability)
+- Recommendation Cache: Radis (key: userId, value: recommendedProductIds)
+- Model: S3 / GCS: Blob storage for ML models / artifacts
 
 HLD:
 ----
