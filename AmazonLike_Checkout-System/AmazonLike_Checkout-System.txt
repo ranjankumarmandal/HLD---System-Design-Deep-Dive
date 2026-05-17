@@ -25,6 +25,13 @@ Assumptions:
 
 API Design:
 -----------
+POST /checkout/start
+POST /checkout/apply-coupon
+POST /checkout/select-shipping
+POST /checkout/payment
+POST /checkout/confirm
+GET /checkout/summary
+GET /checkout/history
 
 DB Schema:
 ----------
