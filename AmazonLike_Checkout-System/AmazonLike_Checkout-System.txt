@@ -19,7 +19,7 @@ Assumptions:
 ------------
 - Suppose we expect 10k checkouts / sec during peak sale events
 - Each checkout might generate 4 - 5 API requests. So about 40K - 50K RPS
-- Inventory and payment are bottlenechs and need to be heavily parallelized
+- Inventory and payment are bottlenecks and need to be heavily parallelized
 - During off-peak hours: load may drop to 1K RPS
 - We need auto-scalling and rate limiting to manage surges
 
@@ -43,6 +43,7 @@ DB Schema:
 
 HLD:
 ----
+Client -> API Gateway -> Checkout Service -> Pricing Service + Cart Service + Order Service + Order DB + Payment Service + Inventory Service -> Inventory DB + Cart DB + Payment Provider + Notification Service
 
 Edge Scenarios:
 ---------------
