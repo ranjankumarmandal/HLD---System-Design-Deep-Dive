@@ -1,0 +1,27 @@
+Functional Requirement:
+-----------------------
+- Start the checkout process, lock cart, prepare summary
+- Apply a coupon or promotion code
+- Select shipping option
+- Submit payment details
+- Finalize and place the order
+- Get the current checkout summary for review
+- (Optional): Retrieve past checkouts
+
+Non-functional Requirement:
+---------------------------
+
+Assumptions:
+------------
+
+API Design:
+-----------
+
+DB Schema:
+----------
+
+HLD:
+----
+
+Edge Scenarios:
+---------------
