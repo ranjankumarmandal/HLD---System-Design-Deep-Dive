@@ -35,6 +35,11 @@ GET /checkout/history
 
 DB Schema:
 ----------
+- Cart/Checkout State: Radis (key: cart_id, value: user_id, items, expires_at)
+- Order Data: RDBMS: PostgreSQL (Order: order_id (PK), user_id (FK), items, total_price, shipping_address, payment_status, created_at, status)
+- Inventory: RDBMS: PostgreSQL: (Inventory: product_id (PK), quantity_available)
+- Product / Price: NoSQL: MongoDB
+- Audit / History: Append-only log: S3, Kafka, BigQuery
 
 HLD:
 ----
