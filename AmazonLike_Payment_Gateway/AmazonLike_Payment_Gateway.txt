@@ -30,6 +30,13 @@ Handling Peaks:
 
 API Design:
 -----------
+POST /payments/initiate
+POST /payments/confirm
+GET /payments/status/{id}
+POST /payments/refund
+POST /payments/webhook
+GET /payments/history/{userId}
+GET /payments/analytics
 
 DB Schema:
 ----------
