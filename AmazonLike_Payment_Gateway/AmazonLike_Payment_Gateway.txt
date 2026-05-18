@@ -47,6 +47,7 @@ DB Schema:
 
 HLD:
 ----
+Client -> API Gateway -> Payment Service + Payment Method Service -> Transaction Service + Refund Service + Notification Service + Fraud Detection Service + External Provider -> DB + Cache + Queue
 
 Edge Scenarios:
 ---------------
