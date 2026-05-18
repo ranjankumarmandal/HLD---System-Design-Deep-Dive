@@ -40,6 +40,10 @@ GET /payments/analytics
 
 DB Schema:
 ----------
+- Transactional DB: PostgreSQL: Store payments, users, transaction logs: ({payments: id(PK), user_id, amount, currency, status, payment_method, created_at, updated_at, provider_txn_id}, {payment_methods: id(PK), user_id, type, token, expiry, is_default, created_at}, {refunds: id(PK), payment_id (FK), amount, status, created_at, processed_at}, {users: id(PK), names, email, phone, created_at})
+- NoSQL DB: MongoDB or DynamoDB: For high velocity session data or caching
+- Cache: Radis: For fast access to transaction / session states
+- Data Warehouse: BigQuery: Analytics and reporting
 
 HLD:
 ----
