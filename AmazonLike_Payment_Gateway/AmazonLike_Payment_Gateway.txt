@@ -1,5 +1,12 @@
 Functional Requirement:
 -----------------------
+- Initiate a payment transaction
+- Confirm payment after OTP authentication
+- Check the status of a transaction
+- Request refund for a transaction
+- Endpoint for external payment provider callbacks
+- Retrieve a users payment history
+- (Optional): Analytics for admins / merchants
 
 Non-functional Requirement:
 ---------------------------
