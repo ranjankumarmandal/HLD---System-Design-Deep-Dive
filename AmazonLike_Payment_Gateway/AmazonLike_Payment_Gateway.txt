@@ -17,6 +17,16 @@ Non-functional Requirement:
 
 Assumptions:
 ------------
+Traffic Estimation:
+- Assume 10M active users, with peak 10K transactions / sec during sales
+- Average Load: 2K transactions / sec
+- Each transaction may require 3-5 api calls
+- Need to handle traffic spikes - auto-scaling and queueing for burst traffic
+
+Handling Peaks:
+- Use load balancers, auto-scaling groups
+- Queue incoming requests if backend is overloaded
+- Design for eventual consistency for non-critical updates
 
 API Design:
 -----------
