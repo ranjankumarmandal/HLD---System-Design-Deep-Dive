@@ -47,6 +47,7 @@ DB Schema:
 
 HLD:
 ----
+Client + Admin Dashboard -> API Gateway -> Coupon Service + Promotion Service + Redemption Service -> DB + Cache + Analytics Service
 
 Edge Scenarios:
 ----------------
