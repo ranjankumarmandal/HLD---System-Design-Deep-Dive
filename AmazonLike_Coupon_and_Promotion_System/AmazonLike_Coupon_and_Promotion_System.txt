@@ -1,5 +1,14 @@
 Functional Requirement:
 -----------------------
+- Create a new coupon
+- Update an existing coupon
+- Delete a coupon
+- List available coupons for a user
+- Redeem a coupon during checkout
+- Get user's redeemed/expired coupons
+- Create a new promotion
+- List current promotions
+- (Optional): Coupon & promotion analytics
 
 Non-Functional Requirement:
 ---------------------------
