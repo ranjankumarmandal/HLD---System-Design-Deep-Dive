@@ -25,6 +25,15 @@ Assumptions:
 
 API Design:
 -----------
+POST /admin/coupons
+PUT /admin/coupons/{couponId}
+DELETE /admin/coupons/{couponId}
+GET /coupons
+POST /coupons/redeem
+GET /coupons/history
+POST /admin/promotions
+GET /promotions
+GET /admin/reporting
 
 DB Schema:
 ----------
