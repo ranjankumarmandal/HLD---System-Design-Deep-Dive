@@ -37,6 +37,13 @@ GET /admin/reporting
 
 DB Schema:
 ----------
+- RDBMS: PostgreSQL:
+---- Coupon (coupon_id(PK), code, description, discount_type, discount_value, expiry_date, usage_limit, created_at, updated_at)
+---- Promotion (promotion_id(PK), title, description, start_date, end_date, discount_type, discount_value, applicable_product_ids, applicable_categories_ids, created_at, updated_at)
+---- UserCoupon (user_coupon_id(PK), user_id, coupon_id, redeemed_at, status)
+---- CouponRedemption (redemption_id(PK), user_id, coupon_id, order_id, redeemed_at)
+
+- NoSQL DB: Radis: for fast lookup and caching of available coupons / promotions
 
 HLD:
 ----
