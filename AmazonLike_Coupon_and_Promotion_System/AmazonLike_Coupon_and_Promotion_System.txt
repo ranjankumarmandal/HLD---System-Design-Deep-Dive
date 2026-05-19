@@ -19,6 +19,9 @@ Non-Functional Requirement:
 
 Assumptions:
 ------------
+- Assuming: 10M active users, ~1M orders / day (~11. orders / sec)
+- During Spikes: 10x: 100 orders / sec: same for coupon validation
+- Admin Actions: 1 / sec. Coupons Browsing: 1000 / sec during sales
 
 API Design:
 -----------
