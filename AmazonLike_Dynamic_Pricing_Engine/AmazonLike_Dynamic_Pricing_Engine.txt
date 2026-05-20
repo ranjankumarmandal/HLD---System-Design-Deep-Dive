@@ -1,5 +1,12 @@
 Functional Requirement:
 -----------------------
+- Get the current price for a product
+- Update the price for a productt
+- Create, update or delete rules / algorithms for dynamic pricing
+- Fetch historical prices for a product
+- Accept competitor price feeds
+- Update inventory levels for products
+- Query audit logs for price changes
 
 Non-Functional Requirement:
 ---------------------------
