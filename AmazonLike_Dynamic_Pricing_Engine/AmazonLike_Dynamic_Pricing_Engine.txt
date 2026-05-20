@@ -24,6 +24,13 @@ Assumptions:
 
 API Design:
 ------------
+GET /price/{productId}
+PUT /price/{productId}
+GET, POST, DELETE /price/dynamic
+GET /price/history/{productId}
+POST /price/competitor
+PUT /inventory/{productId}
+GET /price/analytics
 
 DB Schema:
 ----------
