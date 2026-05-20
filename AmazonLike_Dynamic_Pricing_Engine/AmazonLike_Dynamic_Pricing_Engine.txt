@@ -17,6 +17,10 @@ Non-Functional Requirement:
 
 Assumptions:
 ------------
+- Assume: 10M products, each may require price updates every hour (peak: flash sales)
+- At peak: 10M price update request / hour. 2.8K updates / sec
+- Price queries could be much higher, especially during big events (Black Friday): Assume 100K queries / sec
+- System needs to parallelised price update calculation and ingestion, w will use batch processing during low load, real-time streaming during high load
 
 API Design:
 ------------
