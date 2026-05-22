@@ -40,6 +40,7 @@ DB Schema:
 
 HLD:
 -----
+Client -> API Gateway -> Pricing Service + Monitoring Logging -> Rule Engine + Inventory Service + Compliance Data Service + Price History Service + Product Prices DB + Cache + Notification Service + Batch Processing Workers -> Price Rule DB + Competitor Prices DB + Price History DB
 
 Edge Scenarios:
 ---------------
