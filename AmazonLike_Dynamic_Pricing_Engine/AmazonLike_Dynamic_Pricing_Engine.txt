@@ -34,6 +34,9 @@ GET /price/analytics
 
 DB Schema:
 ----------
+- Primary DB: Distributed NoSQL DB: Cassandra: For product prices: (Product_Price: product_id (PK),current_price, last_updated, price_source)
+Rules DB: RDBMS: PostgreSQL: For pricing rules: (Pricing_Rules: rule_id, product_id, rule_type, parameters, active)
+- Audit / History DB: Time-series DB: TimescaleDB: For price history and audit logs: (Price_History: product_id, price, timestamp, reason), (Competitor_Price: product_id, competitor_id, competitor_price, fetched_at)
 
 HLD:
 -----
