@@ -1,5 +1,11 @@
 Functional Requirement:
 -----------------------
+- Add a new product
+- Update product details
+- Retrieve product by id
+- Search / filter products by attributes
+- Remove product
+- (Optional): Product history
 
 Non-Functional Requirement:
 ---------------------------
