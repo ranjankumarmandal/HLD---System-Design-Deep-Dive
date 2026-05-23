@@ -33,6 +33,9 @@ GET /products/history
 
 DB Schema:
 ----------
+- Primary DB: Distributed NoSQL: Cassandra or MongoDB: For horizontal scaling, fast reads / writes, flexible schema: (Product: product_id (PK), name, description, brand, category, price, attributes, stock, seller_id, created_at, updated_at)
+- Secondary DB: Elasticsearch DB: For fast full-text and attribute search / filtering: (Elasticsearch Index: product_id, name, branch, category, price, attributes)
+- Cache: Radis: For frequently accessed products and search results: (key: product_id, value: product data or search results)
 
 HLD:
 ----
