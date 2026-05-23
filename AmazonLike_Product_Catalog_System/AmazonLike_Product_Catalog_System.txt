@@ -39,6 +39,7 @@ DB Schema:
 
 HLD:
 ----
+client -> API Gateway + Seller Service + Monitoring Service -> Product Catalog Service + Replication / Backup Service -> Search Engine + NoSQL DB + Cache
 
 Edge Scenarios:
 ----------------
