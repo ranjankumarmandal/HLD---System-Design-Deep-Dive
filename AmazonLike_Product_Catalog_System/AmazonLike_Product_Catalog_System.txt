@@ -16,6 +16,11 @@ Non-Functional Requirement:
 
 Assumptions:
 ------------
+- Reads: Millions of request / sec
+- Writes: Thousands / sec
+- Assume: 100M products, peak 10M reads / sec, 100K writes / sec
+- During slow time: Reads may drop by 1M / sec, writes drop to 10K / sec
+- To handle spikes, auto-scaling groups and sharded db wil be used
 
 API Design:
 -----------
