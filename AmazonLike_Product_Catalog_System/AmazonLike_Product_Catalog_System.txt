@@ -43,3 +43,4 @@ client -> API Gateway + Seller Service + Monitoring Service -> Product Catalog S
 
 Edge Scenarios:
 ----------------
+Edge Scenarios
