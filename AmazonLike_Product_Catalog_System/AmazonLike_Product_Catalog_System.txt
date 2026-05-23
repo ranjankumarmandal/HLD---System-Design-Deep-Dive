@@ -24,6 +24,12 @@ Assumptions:
 
 API Design:
 -----------
+POST /products
+PUT /products/{id}
+GET /products/{id}
+GET /products/search
+DELETE /products/{id}
+GET /products/history
 
 DB Schema:
 ----------
