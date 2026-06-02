@@ -40,6 +40,10 @@ GET /warehouse/shipping/{shipment_id}
 
 DB Schema:
 ----------
+- Inventory DB: RDBMS: PostgreSQL: (Inventory: item_id(PK), name, quantity, location_id, status, last_updated), (Location - location_id(PK), warehouse_id(FK), zone, shelf, bin)
+- Operations / Even Log DB: NoSQL: DynamoDB: (OperationsLog: operation_id(PK), timestamp, item_id(FK), type, user_id, status, notes)
+- Warehouse Layout DB: RDBMS: Graph DB: (....)
+- User DB / Robot DB: RDBMS: (Users: user_id(PK), name, role, warehouse_id(FK))
 
 HLD:
 ----
