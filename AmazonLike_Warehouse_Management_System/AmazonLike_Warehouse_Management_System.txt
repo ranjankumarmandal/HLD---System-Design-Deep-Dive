@@ -19,6 +19,10 @@ Non-Functional Requirement:
 
 Assumptions:
 -------------
+- Inventory Operations - If this warehouse handles 1M items, with 100K actions / day, thats about 1 to 2 request / sec average, but can spike to 100+ request / sec during peak
+- Picking / Packing - Hundreds of worker / robots may work in parallel, so parallelizing is key here. Assuming 500 concurrent users / robot
+- Analytics / Dashboard - Less frequent, but potentially heavy queries
+- Peak load - upto 1K request / sec per warehouse, scaling horizontally. Off peak - 50 - 100 request / sec
 
 API Design:
 -----------
