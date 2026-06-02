@@ -47,6 +47,7 @@ DB Schema:
 
 HLD:
 ----
+Client (Optional) -> API Gateway -> Dashboard Service + Picking / Packing Service + Shipping Service + Receiving Service + Inventory Service -> OperationLog DB + Inventory DB
 
 Edge Scenarios:
 ---------------
