@@ -1,5 +1,14 @@
 Functional Requirement:
 -----------------------
+- Add, update, remove, query inventory
+- Receiving shipments
+- Picking & Packing
+- Shipping
+- Return processing
+- Storage optimization
+- User authentication
+- Dashboard analytics
+- Error / incident logging
 
 Non-Functional Requirement:
 ---------------------------
