@@ -1,6 +1,6 @@
 Functional Requirement:
 -----------------------
-- Add, update, remove, query inventory
+- Inventory Management - Add, update, remove, query inventory
 - Receiving shipments
 - Picking & Packing
 - Shipping
@@ -26,6 +26,17 @@ Assumptions:
 
 API Design:
 -----------
+GET, POST, PUT /warehouse/inventory
+POST /warehouse/receiving
+GET /warehouse/receiving/{shipment_id}
+POSt /warehouse/pick
+GET /warehouse/pick/{task_id}
+POST /warehouse/pack
+GET /warehouse/pack/{task_id}
+POST /warehouse/shipping
+GET /warehouse/shipping/{shipment_id}
+.....
+.....
 
 DB Schema:
 ----------
