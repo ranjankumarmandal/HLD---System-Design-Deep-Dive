@@ -24,6 +24,12 @@ Assumptions:
 
 API Design:
 ------------
+POST /tracking/update
+GET /tracking/{shipmentId}
+GET /tracking?userId={id}
+POST /tracking/subscribe
+GET /tracking/history/{shipmentId}
+GET /tracking/nearby?lat={lat}
 
 DB Schema:
 ----------
