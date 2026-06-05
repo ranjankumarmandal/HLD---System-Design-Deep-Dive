@@ -16,6 +16,11 @@ Non-Functional Requirement:
 
 Assumptions:
 ------------
+- Packages shipped per day: assuming 10M
+- Updates per package: assuming 10 updates per package (pickup, warehouse scans, out for delivery, etc.)
+- Updates per day: 100M
+- Updates per second (peak): 1200 updates / sec
+- Reads per second (customers / support): If 5% of packages are being tracked at any moment, 500K tracking queries per hour
 
 API Design:
 ------------
