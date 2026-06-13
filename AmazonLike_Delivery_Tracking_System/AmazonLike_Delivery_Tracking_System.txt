@@ -1,35 +1,14 @@
 Functional Requirement:
 -----------------------
-- Delivery vehicle or agents send location and status updates
-- Customers / support fetch the latest status and location of a package
-- List all packages and their statuses for a user
-- Subscribe to status change notifications for a package (push / email / sms)
-- Fetch full tracking event history for a shipment
-- Support / logistics ca see shipment near a location
 
 Non-Functional Requirement:
 ---------------------------
-- Low latency
-- High availability
-- Massive scale
-- (And so on...)
 
 Assumptions:
 ------------
-- Packages shipped per day: assuming 10M
-- Updates per package: assuming 10 updates per package (pickup, warehouse scans, out for delivery, etc.)
-- Updates per day: 100M
-- Updates per second (peak): 1200 updates / sec
-- Reads per second (customers / support): If 5% of packages are being tracked at any moment, 500K tracking queries per hour
 
 API Design:
-------------
-POST /tracking/update
-GET /tracking/{shipmentId}
-GET /tracking?userId={id}
-POST /tracking/subscribe
-GET /tracking/history/{shipmentId}
-GET /tracking/nearby?lat={lat}
+-----------
 
 DB Schema:
 ----------
@@ -38,4 +17,4 @@ HLD:
 ----
 
 Edge Scenarios:
-----------------
+---------------
