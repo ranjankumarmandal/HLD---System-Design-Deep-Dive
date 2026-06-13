@@ -1,20 +1,44 @@
 Functional Requirement:
 -----------------------
+- Delivery agents / devices push package location updates
+- Users query the current status / location of their package
+- Delivery agents update status (picked_up, out_for_delivery, delivered)
+- Fetch the history of package's status / locations
+- Webhook or Push notification support for real-time customer updates
 
 Non-Functional Requirement:
 ---------------------------
+- Low latency
+- High availability
+- Massive scale
+- (And so on...)
 
 Assumptions:
 ------------
+- Assuming 10M active packages at peak, each sending an update every minute
+-- 10M / 60 = 166667 writes / second at peak
+- Assuming 100M users checking status 3 times a day
+-- 300M / 86400 (sec / day) = 3472 reads / second, but spikes can be much higher
+- Need to design for spikes, say 10x for both reads and writes during peak hours (eg - Black Friday)
+-- Peak writes: ~1.6M / sec
+-- Peak writes: ~34K / sec
 
 API Design:
 -----------
+POST /tracking/updateLocation
+GET /tracking/packageStatus
+POST /tracking/updateStatus
+GET /tracking/deliveryHistory
 
 DB Schema:
 ----------
+- Primary data: NoSQL: DynamoDB, Cassandra: (CurrentStatus: package_id (PK), current_location, status, last_update_time, delivery_agent_id)
+- Secondary data: Historical Data: Append-only store (Amazon S3, HBase): (StatusHistory: package_id (PK), timestamp (FK), location, status, delivery_agent_id)
+- Indexing: Partition by package ID, index on delivery agent ID, status, and timestamp for quick lookups
 
 HLD:
 ----
+- High Level Design (design photo inside same folder)
 
 Edge Scenarios:
 ---------------
