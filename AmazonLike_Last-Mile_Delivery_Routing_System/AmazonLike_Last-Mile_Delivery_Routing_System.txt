@@ -33,6 +33,10 @@ POST /routing/reassignDelivery
 
 DB Schema:
 ----------
+- RDBMS: PostgreSQL: (Packages: package_id, customer_id, address, delivery_window_start, delivery_window_end, priority, status), (Drivers: driver_id, name, current_location, status, assigned_batch_id), (Batches: batch_id, hub_id, scheduled_time, status)
+- NoSQL DB (Cassandra or DynamoDB): (Routes: route_id, driver_id, route_points, ETA, last_updated)
+- Spatial DB (ElasticSearch): For deo queries (nearest driver, address lookup)
+- Cache: Radis: For hot route data, active driver locations
 
 HLD:
 ----
