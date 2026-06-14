@@ -16,6 +16,11 @@ Non-Functional Requirement:
 
 Assumptions:
 ------------
+- Traffic Load: Assuming 1M packages / day in a metro, with peak hour (say, 30% in 2 hours)
+- That's about ~150K route calculations / hour. Or ~42 / sec, just for assignments. (not counting driver updates, live re-routing, etc.)
+- Each driver may request an updated route every 5 minutes, so with 10K drivers, that's ~33 requests / sec
+- During peak times (black friday, holidays, etc.), load could spike 2-5x
+- Mitigation: Using horizontal scaling, partitioning by region / city, and queue-based async processing for non-urgent requests
 
 API Design:
 -----------
