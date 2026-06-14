@@ -1,5 +1,11 @@
 Functional Requirement:
 -----------------------
+- Scheduling a batch of packages for a delivery area
+- A driver wants to retrieve their current optimal route
+- A driver wants to update package status (picked_up, delivered, failed, etc.)
+- Endpoint for receiving live traffic, weather, and order updates
+- Monitoring, analytics, and manual interventions
+- Re-assign packages when a driver is unavailable
 
 Non-Functional Requirement:
 ---------------------------
