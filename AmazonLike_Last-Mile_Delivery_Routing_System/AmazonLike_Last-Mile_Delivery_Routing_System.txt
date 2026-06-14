@@ -24,6 +24,12 @@ Assumptions:
 
 API Design:
 -----------
+POST /routing/createDeliveryBatch
+GET /routing/getOptimizedRoute
+PUT /routing/updateRouteStatus
+GET /routing/realtimeEventFeed
+GET or POST /routing/admin
+POST /routing/reassignDelivery
 
 DB Schema:
 ----------
