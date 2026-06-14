@@ -40,6 +40,7 @@ DB Schema:
 
 HLD:
 ----
+- High Level Design (design photo inside same folder)
 
 Edge Scenarios:
 ---------------
