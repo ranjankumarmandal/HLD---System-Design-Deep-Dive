@@ -16,6 +16,9 @@ Non-Functional Requirement:
 
 Assumptions:
 -------------
+- Traffic estimates: Amazon processes millions of orders per second, so the system must handle thousands of requests per second (peak traffic cold be 10K+ rps during events like prime data)
+- Spike handling: Using automatic scaling for stateless services (Kubernetes / EC2 auto-scaling), and queueing for bust traffic (order requests can be queued for allocation)
+- Parallel processing: Allocation logic can be parallelized by region or warehouse
 
 API Design:
 ------------
