@@ -1,5 +1,11 @@
 Functional Requirement:
 -----------------------
+- Receives new order requests, including items, costomer location, delivery preferences
+- Returns possible shipment options for an order (cost, estimated delivery, split shipments, etc.)
+- Allocates the item to warehouses and cretes shipment tasks
+- Updates warehouse inventory as items are allocated
+- Provides shipment status to customers or internal tools
+- For updating warehouse / carrier metadata, prices, or capacity
 
 Non-Functional Requirement:
 ---------------------------
