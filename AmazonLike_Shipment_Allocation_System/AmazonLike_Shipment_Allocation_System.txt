@@ -22,6 +22,12 @@ Assumptions:
 
 API Design:
 ------------
+POST /allocation/createOrder
+GET /allocation/getShipmentOptions
+POST /allocation/allocateShipment
+PUT /allocation/updateInventory
+GET /allocation/trackShipment
+GET or POST or PUT /allocation/admin
 
 DB Schema:
 -----------
