@@ -31,6 +31,10 @@ GET or POST or PUT /allocation/admin
 
 DB Schema:
 -----------
+- Order DB: (Orders: order_id (PK), customer_id, order_time, status, items, shipment_id, delivery_address)
+- Inventory DB: (Inventory: warehouse_id, product_id, quantity, last_updated)
+- Warehouse / Carrier Metadata DB: (Warehouses: warehouse_id (PK), location, capacity, operating_hours)
+- Shipment DB: (Shipments: shipment_id (PK), order_id, warehouse_id, carrier_id, status, tracking_number)
 
 HLD:
 ----
