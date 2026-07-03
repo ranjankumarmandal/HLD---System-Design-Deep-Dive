@@ -18,6 +18,12 @@ Non-Functional Requirement:
 
 Assumptions:
 ------------
+- Estimated load: Assuming Amazon processes ~1M returns per day
+  - That's ~12 returns / sec at a steady rate, but in reality, traffic is bursty - peak times may see 10-50x normal rate
+  - To handle peak load, designing for ~500 returns / sec
+- Parallel Processing: Many returns are processed in parallel - especially for auto-approval and refunds
+- Scaling: Microservices architecture, auto-scaling groups, and queue-based processing ensure we can handle spike
+- Heavy vs slow time: Using message queues and event-driven architecture to smooth out spikes and prevent overload during peak hours
 
 API Design:
 -----------
