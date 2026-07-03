@@ -39,6 +39,9 @@ GET /returns/analytics
 
 DB Schema:
 -----------
+- RDBMS: (PostgreSQL): (returns: return_id(PK), user_id(FK), order_id(FK), item_id, status, created_at, updated_at, reason, refund_id(FK), inspection_result), (refunds: refund_id(PK), return_id(FK), use_id(FK), amount, status, issued_at, method), (users: user_id(PK), name, email), (items: item_id(PK), name, return_policy)
+- NoSQL: (MongoDB): (return_audit_log: log_id, return_id, action, performed_by, timestamp, notes)
+- Indexing: Indexing on user_id, status, created_at for quick queries
 
 HLD:
 ----
