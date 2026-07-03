@@ -27,6 +27,15 @@ Assumptions:
 
 API Design:
 -----------
+POST /returns
+GET /returns/{returnId}
+POST /returns/{returnId}/cancel
+POST /returns/{returnId}/inspection
+POST /refunds
+GET /refunds/{refundId}
+POST /refunds/{refundId}/escalate
+GET /returns/user/{userId}
+GET /returns/analytics
 
 DB Schema:
 -----------
