@@ -45,6 +45,7 @@ DB Schema:
 
 HLD:
 ----
+- Check for photo attached inside same folder
 
 Edge Scenarios:
 ---------------
