@@ -1,5 +1,13 @@
 Functional Requirement:
 -----------------------
+- Initiate a return request (customer, agent)
+- Check the return status
+- Warehouse/agent updates inspection results
+- Initiate a refund (auto / manual)
+- Check status of a refund
+- Escalate return for manual review
+- Get all returns by a user
+- Analytics
 
 Non-Functional Requirement:
 ---------------------------
