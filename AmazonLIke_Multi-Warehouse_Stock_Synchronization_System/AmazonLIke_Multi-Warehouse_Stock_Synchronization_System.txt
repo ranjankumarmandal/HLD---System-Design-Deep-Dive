@@ -29,6 +29,9 @@ GET /stock/history
 
 DB Schema:
 ----------
+- Primary: NoSQL (Cassandra o DynamoDB): for high write throughput and global distribution: (StockLevels: itemId(PK), warehouseID, stockQty, lastUpdated)
+- Secondary: RDBMS (PostgreSQL): for querying historical stock changes, reporting, and analytics: (StockHistory: id(PK), itemId, warehouseId, delta, operationType, timestamp)
+- Indexes: On itemId for lst stock lookup, on warehouseId for local stock queries, On (itemId, timestamp) for historical lookups
 
 HLD:
 ----
