@@ -14,6 +14,11 @@ Non-functional Requirement:
 
 Assumptions:
 ------------
+- Assume: 1000 warehouses, each handling 100 stock changes / sec (sales, inbound, returns, etc.)
+  -- Total write traffic: 1000 * 100 = 100K writes / sec
+- Read queries: (for order placement, internal tools): Could spike to 1M / sec globally, especially during sales
+- During peak (Black friday, prime day): Both reads and writes may spike 10x
+- To handle bursts, we'll need horizontal scalability (sharding, load balancing, and message batching)
 
 API-Design:
 -----------
