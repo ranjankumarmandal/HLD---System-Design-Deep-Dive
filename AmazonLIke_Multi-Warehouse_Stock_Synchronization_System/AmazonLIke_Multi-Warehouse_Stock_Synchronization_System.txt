@@ -1,5 +1,9 @@
 Functional Requirement:
 -----------------------
+- Warehouse clients send stock changes
+- Query the current global stock for one or more items
+- Query stock levels for a specific item at a specific warehouse
+- Get the history of changes for an item
 
 Non-functional Requirement:
 ---------------------------
