@@ -1,0 +1,20 @@
+Functional Requirement:
+-----------------------
+
+Non-functional Requirement:
+---------------------------
+
+Assumptions:
+------------
+
+API-Design:
+-----------
+
+DB Schema:
+----------
+
+HLD:
+----
+
+Edge Scenarios:
+----------------
