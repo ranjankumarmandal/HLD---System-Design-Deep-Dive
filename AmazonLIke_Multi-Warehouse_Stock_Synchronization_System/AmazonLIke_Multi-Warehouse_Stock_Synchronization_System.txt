@@ -22,6 +22,10 @@ Assumptions:
 
 API-Design:
 -----------
+POST /stock/update
+GET /stock/query
+GET /stock/warehouse
+GET /stock/history
 
 DB Schema:
 ----------
