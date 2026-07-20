@@ -15,6 +15,12 @@ Non-Functional Requirement:
 
 Assumptions:
 ------------
+- Assuming: 10M packages in transit globally at peak
+- Assuming each package emits an update every 1-2 minutes; ~5 updates per package per hour
+- Peak: 10M * = 50M updates / hour = 14K updates / second
+- Read load(user queries): Assuming 1M concurrent uses, each polling every 10 seconds = 100K requests / second
+- To handle spikes (holiday session), designing for at least 2-3x peak:  30K-50K writes / sec and 300K reads / sec
+- Using auto-scaling, partitioning and load balancing to handle sudden traffic spikes
 
 API Design:
 -----------
