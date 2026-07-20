@@ -32,6 +32,9 @@ GET /package/analytics/delays
 
 DB Schema:
 ----------
+- Primary DB: NoSQL: Cassandra: For high write throughput, easy partitioning, and time-series data storage. Indexes: Partitioning by packageId, sort by timestamp for fast retrieval of latest status and history. (PackageTracking: packageId(PK), timestamp(sor key), location, status, updatedBy, metadata)
+- Secondary storage: S3: For analytics, archive to data warehouse
+- Cache: Radis: For hot packages (recently queried)
 
 HLD:
 ----
