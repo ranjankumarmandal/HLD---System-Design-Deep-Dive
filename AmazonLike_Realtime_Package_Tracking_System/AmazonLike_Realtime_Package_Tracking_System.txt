@@ -24,6 +24,11 @@ Assumptions:
 
 API Design:
 -----------
+POST /package/updateLocation
+GET /package/status/{packageId}
+GET /package/history/{packageId}
+POST /package/subscribe
+GET /package/analytics/delays
 
 DB Schema:
 ----------
