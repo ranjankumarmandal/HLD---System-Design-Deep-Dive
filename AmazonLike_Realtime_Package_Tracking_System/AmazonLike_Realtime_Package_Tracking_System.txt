@@ -1,5 +1,10 @@
 Functional Requirement:
 -----------------------
+- Used by delivery agents, IoT devices, or third-party logistics to push location and status updates
+- Used by customers and staff to fetch the latest status and location of a specific package
+- Fetch the entire movement history of a package
+- Users or systems can subscribe to push notifications for status changes
+- For operational analytics and package movement and delays
 
 Non-Functional Requirement:
 ---------------------------
